@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="testApp">
+<head>
+    <meta charset="utf-8">
+    <script src="../bower_components/angular/angular.js"></script>
+</head>
+<body ng-controller="TestController">
+<!--     <ul>
+        <li><label>numberValue:<input ng-model="numberValue" /></li>
+        <li><label>stringValue:<input ng-model="stringValue" /></li>
+        <li><label>objectValue.message:<input ng-model="objectValue.message" /></li>
+    </ul> -->
+    <ul>
+        <li><label>numberValue: {{numberValue}}</li>
+        <li><label>stringValue: {{stringValue}} </li>
+        <li><label>objectValue.message: {{objectValue.message}}</li>
+    </ul>
+
+    <w1 number-value="numberValue"
+        string-value="stringValue"
+        object-value="objectValue"
+        array-value="arrayValue"></w1>
+
+    <w1 number-value="numberValue"
+        string-value="stringValue"
+        object-value="objectValue"
+        array-value="arrayValue"></w1>
+
+</body>
+<script src="app.js"></script>
+</html>
